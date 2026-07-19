@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+*.egg-info/
+
+# Environment / secrets
+.env
+*.key
+*.pem
+server.key
+client.key
+ca.key
+*.crt
+*.csr
+
+# OS / editor clutter
+.DS_Store
+*.swp
+
+# Logs (can be large / contain lab-specific data)
+*.log
