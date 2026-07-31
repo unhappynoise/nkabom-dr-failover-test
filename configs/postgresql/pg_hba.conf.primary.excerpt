@@ -1,0 +1,6 @@
+# Excerpt from pg_hba.conf on the Primary host (primarysite).
+# Only project-specific additions are shown; default PostgreSQL
+# boilerplate/comments have been omitted for brevity.
+#
+# TYPE     DATABASE      USER          ADDRESS              METHOD
+hostssl    replication   replicator    10.10.20.10/32       cert

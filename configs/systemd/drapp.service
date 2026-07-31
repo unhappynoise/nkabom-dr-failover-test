@@ -1,0 +1,14 @@
+[Unit]
+Description=Nkabom DR Test Flask App
+After=network.target postgresql.service
+
+[Service]
+User=primarysite
+WorkingDirectory=/home/primarysite/app
+Environment="SITE_NAME=PRIMARY-SITE" "SITE_IP=10.10.10.10"
+EnvironmentFile=/etc/nkabom-dr/app.env
+ExecStart=/home/primarysite/app/venv/bin/python3 /home/primarysite/app/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
